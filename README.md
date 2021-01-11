@@ -3,14 +3,14 @@
 * Jenkins是一个开源的、提供友好操作界面的持续集成（CI）工具，起源于Hudson（Hudson是商用版），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行（这个比较抽象，暂且写上，不做解释）。Jenkins用JAVA语言编写，可在Tomcat等流行的servlet容器中运行，也可以独立运行，通常与版本管理工具（SCM）、构建工具结合使用：常用的版本控制工具有SVN、GIT，构建工具有Maven、Ant、Gradle
 #### 安装Jenkins
 * 安装JAVA环境
-    yum install java
+    yum install java -y
 * 查看当前JAVA版本
     java -version
 * 添加Jenkins源
 ```
 wget -O /etc/yum.repos.d/jenkins.repo http://jenkins-ci.org/redhat/jenkins.repo
 rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
-yum install jenkins
+yum install jenkins -y
 ``` 
 #### Jenkins配置
 * JENKINS_HOME
